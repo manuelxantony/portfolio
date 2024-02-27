@@ -46,11 +46,11 @@ body {
 }
 
 @layer components {
-  article {
+  article123 {
     @apply text-justify text-[15px] text-[#313332] leading-6 tracking-tight;
   }
+}
 
-  hashtag {
-    @apply text-justify text-[15px] text-[#787878] leading-6 tracking-tight;
-  }
+.hashtag {
+  @apply text-justify text-[15px] text-[#787878] leading-6 tracking-tight;
 }

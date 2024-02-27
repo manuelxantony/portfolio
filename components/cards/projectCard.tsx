@@ -15,7 +15,11 @@ export default function ProjectCard({ project }: { project: Project }) {
         <div className="flex justify-between">
           <div className="flex gap-3">
             {project.roles.map((role, index) => {
-              return <hashtag key={index}>#{role}</hashtag>;
+              return (
+                <div key={index} className="hashtag">
+                  #{role}
+                </div>
+              );
             })}
           </div>
           <div className="flex gap-5 justify-end">

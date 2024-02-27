@@ -13,3 +13,9 @@ export type Project = {
   roles: string[];
   isBeta: boolean;
 };
+
+export type Writeup = {
+  id: string;
+  title: string;
+  date: string;
+};
