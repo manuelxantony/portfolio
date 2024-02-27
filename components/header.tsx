@@ -5,7 +5,7 @@ import Nav from '@/components/nav';
 
 export default function Header() {
   return (
-    <header className="mt-10 md:p-5">
+    <header className="mt-10 p-5">
       <div className="flex justify-between ">
         <h3 className="pr-5 font-bold">manuel antony</h3>
         <Socials />
