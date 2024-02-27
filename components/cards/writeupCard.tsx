@@ -6,7 +6,7 @@ import { Writeup } from '@/app/lib/definitions';
 
 export default function WriteupCard({ writeup }: { writeup: Writeup }) {
   return (
-    <div className="border-b bottom-1 h-16 p-2">
+    <div className="border-b bottom-1 p-2 pb-6">
       <div className="flex flex-row flex-wrap justify-between h-full">
         <div className="flex flex-row flex-wrap justify-center items-center gap-4 h-full">
           <div className="flex justify-center items-center">
