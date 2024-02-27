@@ -19,8 +19,6 @@ export default function Nav() {
     },
   ];
 
-  console.log('-----', pathName);
-
   return (
     <div className="flex gap-3 text-gray-600">
       {links.map((link, index) => {
