@@ -1,10 +1,8 @@
 import { GitHubLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 
-export default function Socials() {
-  const openURLInNewTab = (url: string) => {
-    window.open(url, '_blank', 'noopener, noreferrer');
-  };
+import { openURLInNewTab } from '@/app/lib/utils';
 
+export default function Socials() {
   return (
     <div className="flex flex-row justify-between items-center gap-5">
       <button
