@@ -10,7 +10,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       <div className="h-full flex flex-col justify-between select-none ">
         <div className="flex flex-col gap-4">
           <h3 className="font-medium">{project.title}</h3>
-          <h5>{project.description}</h5>
+          <h5 className="font-light">{project.description}</h5>
         </div>
         <div className="flex justify-between">
           <div className="flex gap-3">

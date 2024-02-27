@@ -10,7 +10,7 @@ export default function WriteUps() {
     },
     {
       id: '2',
-      title: 'using app router in nextjs kjkjkjkjkjkkkjkj',
+      title: 'using app router',
       date: '29-02-2024',
     },
     {
