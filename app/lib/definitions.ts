@@ -10,4 +10,6 @@ export type Project = {
   description: string;
   github: string;
   url: string;
+  roles: string[];
+  isBeta: boolean;
 };

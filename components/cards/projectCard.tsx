@@ -10,28 +10,35 @@ export default function ProjectCard({ project }: { project: Project }) {
       <div className="h-full flex flex-col justify-between select-none ">
         <div className="flex flex-col gap-4">
           <h3 className="font-medium">{project.title}</h3>
-          <article>{project.description}</article>
+          <h5>{project.description}</h5>
         </div>
-        <div className="flex gap-5 justify-end">
-          <button
-            className="flex flex-row gap-1"
-            onClick={() => {
-              openURLInNewTab(project.github);
-            }}
-          >
-            <div className="font-semibold ">github</div>
-            <ArrowTopRightIcon className="flex justify-end bg-gray-200" />
-          </button>
+        <div className="flex justify-between">
+          <div className="flex gap-3">
+            {project.roles.map((role, index) => {
+              return <hashtag key={index}>#{role}</hashtag>;
+            })}
+          </div>
+          <div className="flex gap-5 justify-end">
+            <button
+              className="flex flex-row gap-1"
+              onClick={() => {
+                openURLInNewTab(project.github);
+              }}
+            >
+              <div className="font-semibold ">github</div>
+              <ArrowTopRightIcon className="flex justify-end bg-gray-200" />
+            </button>
 
-          <button
-            className="flex flex-row gap-1"
-            onClick={() => {
-              openURLInNewTab(project.url);
-            }}
-          >
-            <div className="font-semibold ">launch</div>
-            <ArrowTopRightIcon className="flex justify-end bg-gray-200" />
-          </button>
+            <button
+              className="flex flex-row gap-1"
+              onClick={() => {
+                openURLInNewTab(project.url);
+              }}
+            >
+              <div className="font-semibold ">launch</div>
+              <ArrowTopRightIcon className="flex justify-end bg-gray-200" />
+            </button>
+          </div>
         </div>
       </div>
     </div>

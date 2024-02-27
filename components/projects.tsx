@@ -9,6 +9,8 @@ export default function Projects() {
       description: 'a minimal shopping card build with nextjs and postgress',
       github: 'https://github.com/manuelxantony/snapshop',
       url: 'https://snapshopz.vercel.app/',
+      roles: ['creator', 'maintainer'],
+      isBeta: true,
     },
     {
       id: '2',
@@ -16,6 +18,8 @@ export default function Projects() {
       description: 'a sample description',
       github: '',
       url: '',
+      roles: ['creator', 'maintainer'],
+      isBeta: true,
     },
     {
       id: '3',
@@ -23,6 +27,8 @@ export default function Projects() {
       description: 'a sample description',
       github: '',
       url: '',
+      roles: ['creator', 'maintainer'],
+      isBeta: true,
     },
     {
       id: '4',
@@ -30,6 +36,8 @@ export default function Projects() {
       description: 'a sample description',
       github: '',
       url: '',
+      roles: ['creator', 'maintainer'],
+      isBeta: true,
     },
     {
       id: '5',
@@ -37,6 +45,8 @@ export default function Projects() {
       description: 'a sample description',
       github: '',
       url: '',
+      roles: ['creator', 'maintainer'],
+      isBeta: true,
     },
   ];
 

@@ -4,7 +4,7 @@
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background: 41, 62, 81;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -14,16 +14,11 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-} */
+}
 
-/* body {
+body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background));
 } */
 
 @layer utilities {
@@ -53,5 +48,9 @@
 @layer components {
   article {
     @apply text-justify text-[15px] text-[#313332] leading-6 tracking-tight;
+  }
+
+  hashtag {
+    @apply text-justify text-[15px] text-[#787878] leading-6 tracking-tight;
   }
 }
