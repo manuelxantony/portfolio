@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="p-5">
+    <div className="mt-5 md:mt-10">
       <h3 className="font-bold">about</h3>
       <div className="mt-4 ">
         <article>
