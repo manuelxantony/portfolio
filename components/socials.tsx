@@ -9,7 +9,7 @@ export default function Socials() {
     <div className="flex flex-row justify-between items-center gap-5">
       <button
         onClick={() => {
-          openURLInNewTab('https://github.com/manuelxantony');
+          openURLInNewTab('https://github.com/manuelxantony?tab=repositories');
         }}
       >
         <GitHubLogoIcon />
