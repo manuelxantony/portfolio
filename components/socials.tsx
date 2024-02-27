@@ -1,5 +1,3 @@
-'use client';
-
 import { GitHubLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 
 export default function Socials() {

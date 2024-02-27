@@ -49,3 +49,9 @@ body {
     @apply text-[18px];
   }
 }
+
+@layer components {
+  article {
+    @apply text-justify text-[15px] text-[#313332] leading-6 tracking-tight;
+  }
+}

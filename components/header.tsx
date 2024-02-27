@@ -1,10 +1,18 @@
+'use client';
+
 import Socials from '@/components/socials';
+import Nav from '@/components/nav';
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center mt-16 md:p-5 ">
-      <h4 className="pr-5 font-bold">manuel antony</h4>
-      <Socials />
-    </div>
+    <header className="mt-10 md:p-5">
+      <div className="flex justify-between ">
+        <h3 className="pr-5 font-bold">manuel antony</h3>
+        <Socials />
+      </div>
+      <div className="flex justify-end mt-10">
+        <Nav />
+      </div>
+    </header>
   );
 }
