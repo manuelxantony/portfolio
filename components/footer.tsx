@@ -1,3 +1,6 @@
+'use client';
+
+import { openURLInNewTab } from '@/app/lib/utils';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -16,9 +19,13 @@ export default function Footer() {
         </div>
         <div>
           <span>by </span>
-          <Link href={'https://twitter.com/xmanuelxantony'}>
+          <button
+            onClick={() => {
+              openURLInNewTab('https://twitter.com/xmanuelxantony');
+            }}
+          >
             <span className="underline">@manuelxantony </span>
-          </Link>
+          </button>
           <span>2024</span>
         </div>
       </div>
