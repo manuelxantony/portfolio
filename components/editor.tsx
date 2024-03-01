@@ -1,7 +1,6 @@
 'use client';
 
 import EditorJS from '@editorjs/editorjs';
-import Header from '@editorjs/header';
 
 import { useEffect, useRef, useState } from 'react';
 
@@ -9,7 +8,9 @@ export default function Editor({ onSave }) {
   const [isMounted, setIsMounted] = useState<boolean>(false);
   const ref = useRef<EditorJS>();
 
-  const initEditor = () => {
+  const initEditor = async () => {
+    const EditorJS = (await import('@editorjs/editorjs')).default;
+    const Header = (await import('@editorjs/header')).default;
     if (!ref.current) {
       const editor = new EditorJS({
         holder: 'editor',
