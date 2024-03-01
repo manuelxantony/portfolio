@@ -26,7 +26,7 @@ export default function Footer() {
           >
             <span className="underline">@manuelxantony </span>
           </button>
-          <span>2024</span>
+          <span> 2024</span>
         </div>
       </div>
     </footer>
