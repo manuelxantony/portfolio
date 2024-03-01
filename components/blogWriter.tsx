@@ -21,7 +21,7 @@ export default function BlogWriter() {
         name="description"
         id="description"
         placeholder="blog description"
-        className="w-full resize-none focus:outline-none"
+        className="w-full resize-none focus:outline-none font-bold"
       ></textarea>
       <Editor onSave={onSave} />
     </div>

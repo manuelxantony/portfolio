@@ -3,11 +3,15 @@
 import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 
 import { Writeup } from '@/app/lib/definitions';
+import Link from 'next/link';
 
 export default function WriteupCard({ writeup }: { writeup: Writeup }) {
   return (
     <div className="border-b bottom-1 h-16 p-2">
-      <div className="flex flex-row flex-wrap justify-between h-full">
+      <Link
+        href={writeup.link}
+        className="flex flex-row flex-wrap justify-between h-full"
+      >
         <div className="flex flex-row flex-wrap justify-center items-center gap-4 h-full ">
           <div className="flex justify-center items-center">
             <ArrowTopRightIcon />
@@ -18,7 +22,7 @@ export default function WriteupCard({ writeup }: { writeup: Writeup }) {
         <div className="text-gray-500 w-24 flex items-center justify-center">
           {writeup.date}
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

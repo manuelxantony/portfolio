@@ -18,4 +18,5 @@ export type Writeup = {
   id: string;
   title: string;
   date: string;
+  link: string;
 };
