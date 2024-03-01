@@ -1,3 +1,4 @@
+import { useFormState } from 'react-dom';
 import WriteupCard from './cards/writeupCard';
 import { Writeup } from '@/app/lib/definitions';
 
@@ -39,6 +40,10 @@ export default function WriteUps() {
       date: '28-02-2024',
     },
   ];
+
+  const onSubmit = () => {
+    console.log('button pressed');
+  };
 
   return (
     <div className="mt-5 md:mt-10">
