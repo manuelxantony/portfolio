@@ -1,4 +1,4 @@
-import { Writeup } from '@/app/lib/definitions';
+import { Project, Writeup } from '@/app/lib/definitions';
 
 export const writeUps: Writeup[] = [
   {
@@ -42,5 +42,53 @@ export const writeUps: Writeup[] = [
     title: 'sample post',
     date: '28-02-2024',
     link: '/writeups/sample-post',
+  },
+];
+
+export const projects: Project[] = [
+  {
+    id: '1',
+    title: 'snapshop',
+    description: 'a minimal shopping card build with nextjs and postgress',
+    github: 'https://github.com/manuelxantony/snapshop',
+    url: 'https://snapshopz.vercel.app/',
+    roles: ['creator', 'maintainer'],
+    isBeta: true,
+  },
+  {
+    id: '2',
+    title: 'project 2',
+    description: 'a sample description',
+    github: '',
+    url: '',
+    roles: ['creator', 'maintainer'],
+    isBeta: true,
+  },
+  {
+    id: '3',
+    title: 'project 3',
+    description: 'a sample description',
+    github: '',
+    url: '',
+    roles: ['creator', 'maintainer'],
+    isBeta: true,
+  },
+  {
+    id: '4',
+    title: 'project 4',
+    description: 'a sample description',
+    github: '',
+    url: '',
+    roles: ['creator', 'maintainer'],
+    isBeta: true,
+  },
+  {
+    id: '5',
+    title: 'project 5',
+    description: 'a sample description',
+    github: '',
+    url: '',
+    roles: ['creator', 'maintainer'],
+    isBeta: true,
   },
 ];
