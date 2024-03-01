@@ -49,7 +49,7 @@ export const projects: Project[] = [
   {
     id: '1',
     title: 'snapshop',
-    description: 'a minimal shopping card build with nextjs and postgress',
+    description: 'a minimal shopping card in nextjs',
     github: 'https://github.com/manuelxantony/snapshop',
     url: 'https://snapshopz.vercel.app/',
     roles: ['creator', 'maintainer'],
