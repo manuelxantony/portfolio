@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function WriteupCard({ writeup }: { writeup: Writeup }) {
   return (
-    <div className="border-b bottom-1 h-16 p-2">
+    <div className="h-16 p-2">
       <Link
         href={writeup.link}
         className="flex flex-row flex-wrap justify-between h-full"

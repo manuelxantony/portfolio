@@ -9,7 +9,7 @@ export default function DynamicHeader() {
   const pathName = usePathname();
 
   return (
-    <div>
+    <>
       {pathName == '/' ||
       pathName == '/about' ||
       pathName == '/projects' ||
@@ -18,6 +18,6 @@ export default function DynamicHeader() {
       ) : (
         <NavWriteup />
       )}
-    </div>
+    </>
   );
 }

@@ -11,8 +11,13 @@ export default function WriteUps() {
     <div className="mt-5 md:mt-10">
       <h3 className="font-bold">writeups</h3>
       <div className="mt-4 ">
-        {writeUps.map((writeup) => {
-          return <WriteupCard key={writeup.id} writeup={writeup} />;
+        {writeUps.map((writeup, index) => {
+          return (
+            <div key={writeup.id}>
+              {index == 0 ? ' ' : <div className="border-b bottom-1" />}
+              <WriteupCard writeup={writeup} />
+            </div>
+          );
         })}
       </div>
     </div>
