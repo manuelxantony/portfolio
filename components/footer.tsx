@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="mt-14 mb-14 w-full ">
       <div className="w-full border-b border-1"></div>
 
-      <div className="mt-14 flex justify-between items-center gap-1 text-sm text-gray-400 ">
+      <div className="mt-14  flex flex-col md:flex-row md:justify-between items-center justify-center text-sm text-gray-400 ">
         <div>
           <span>
             write me at{' '}
@@ -17,7 +17,7 @@ export default function Footer() {
             </Link>
           </span>
         </div>
-        <div>
+        <div className="mt-4 md:mt-0">
           <span>by </span>
           <button
             onClick={() => {
