@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="w-full flex justify-center items-center">
           <div className="w-full md:w-[640px] p-3">
-            <Header />
+            <DynamicHeader />
             {children}
           </div>
         </div>

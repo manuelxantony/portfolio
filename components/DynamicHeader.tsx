@@ -7,7 +7,17 @@ import NavWriteup from './navWriteups';
 
 export default function DynamicHeader() {
   const pathName = usePathname();
-  console.log(pathName);
 
-  return <div>{pathName == '/writeups' ? <Header /> : <NavWriteup />}</div>;
+  return (
+    <div>
+      {pathName == '/' ||
+      pathName == '/about' ||
+      pathName == '/projects' ||
+      pathName == '/writeups' ? (
+        <Header />
+      ) : (
+        <NavWriteup />
+      )}
+    </div>
+  );
 }
